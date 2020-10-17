@@ -7,7 +7,10 @@
 # include <fcntl.h>
 # include <sys/types.h>
 # include <dirent.h>
-# include "my_config.h"
+# include <ctype.h>
+# include "../my_config.h"
+# include "err_msg.h"
 
+# define MY_STRUCT "my_struct.txt"
 
 #endif

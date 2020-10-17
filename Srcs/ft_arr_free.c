@@ -1,18 +1,23 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr_fd.c                                     :+:      :+:    :+:   */
+/*   ft_arr_free.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: kilee <kilee@student.42.fr>                +#+  +:+       +#+        */
+/*   By: kihoonlee <kihoonlee@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/10/03 16:33:40 by kihoonlee         #+#    #+#             */
-/*   Updated: 2020/10/14 14:08:29 by kilee            ###   ########.fr       */
+/*   Created: 2020/10/17 11:20:57 by kihoonlee         #+#    #+#             */
+/*   Updated: 2020/10/17 11:48:27 by kihoonlee        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstr_fd(char *s, int fd)
+void	ft_arr_free(char **arr)
 {
-	write(fd, s, ft_strlen(s));
+	int i;
+
+	i = 0;
+	while(arr[i])
+		free(arr[i++]);
+	free(arr);
 }

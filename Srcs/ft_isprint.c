@@ -1,27 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_isprint.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kihoonlee <kihoonlee@student.42.fr>        +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/09/28 13:53:24 by kihoonlee         #+#    #+#             */
-/*   Updated: 2020/10/03 20:31:54 by kihoonlee        ###   ########.fr       */
+/*   Created: 2020/10/03 20:34:15 by kihoonlee         #+#    #+#             */
+/*   Updated: 2020/10/17 11:03:47 by kihoonlee        ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_bzero(void *s, size_t n)
+int		ft_isprint(int c)
 {
-	size_t	i;
-	char	*s_new;
-
-	i = 0;
-	s_new = (char *)s;
-	while (i < n)
-	{
-		s_new[i] = 0;
-		++i;
-	}
+	if (c <= 31 || c >= 127)
+		return (0);
+	return (1);
 }
