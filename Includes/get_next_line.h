@@ -6,7 +6,7 @@
 /*   By: kilee <kilee@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/13 16:49:10 by kihoonlee         #+#    #+#             */
-/*   Updated: 2020/10/19 10:36:59 by kilee            ###   ########.fr       */
+/*   Updated: 2020/10/20 08:48:42 by kilee            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@
 ** Define OPEN_MAX when can't include <limits.h>
 */
 # ifndef OPEN_MAX
-#  define OPEN_MAX 20
+#  define OPEN_MAX 12800
 # endif
 
 size_t		ft_strlen(const char *s);

@@ -1,6 +1,5 @@
 #include "../Includes/main.h"
 #include "../Includes/libft.h"
-#include "../Includes/get_next_line.h"
 #include "../my_config.h"
 
 char 	*get_header_path(const char *name)
@@ -23,7 +22,7 @@ int		main(void)
 	char	*header_path;
 	int		yes_struct;
 	int		align_point;
-
+	int		error_check;
 /*
 ** 헤더파일 생성 및 파일 열기
 */
@@ -50,8 +49,10 @@ int		main(void)
 	close(fd);
 /* 이제 여기서 정렬 실행 */
 	fd = open(TEMP_H, O_RDONLY);
-	do_align(fd, align_point);
+	error_check = do_align(fd, align_point);
 	close(fd);
+	if (error_check == 0)
+		return (0);
 	remove(TEMP_H);
 	if (yes_struct == 1)
 		printf("%s\n", SUCCESS_YES_STRUCT);

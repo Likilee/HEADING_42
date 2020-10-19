@@ -2,5 +2,5 @@
 
 void	put_finish(int fd)
 {
-	write(fd, "#endif\n", 7);
+	write(fd, "#endif", 6);
 }

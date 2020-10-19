@@ -1,2 +1,2 @@
 #!/bin/bash
-make re && ./my_header
+make && make clean && ./heading_42

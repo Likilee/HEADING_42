@@ -61,7 +61,7 @@ int		find_align_point(int fd)
 	return (max_point);
 }
 
-void	do_align(int fd, int align_point)
+int		do_align(int fd, int align_point)
 {
 	int		gnl_val;
 	char	*line;
@@ -87,7 +87,7 @@ void	do_align(int fd, int align_point)
 				len = strlen(&line[point]);
 				itr = align_point / 4 + 4;
 				if(!(temp = (char *)calloc(sizeof(char), len + itr + 1)))
-					return ;
+					return (0);
 				while(itr--)
 					strcat(temp, "\t");
 				strcat(temp, &line[point]);
@@ -102,11 +102,20 @@ void	do_align(int fd, int align_point)
 						++len;
 					++point;
 				}
-				while (line[point++] != '\t')
+				if (!strchr(&line[point], '\t'))
+				{
+					printf("\n%s", NO_TAB);
+					printf("Problem in this line : %s\n", line);
+					printf("Check 'not_align.h'\n");
+					printf("***************************************************\n\n");
+
+					return (0);
+				}
+				while (line[point] && line[point++] != '\t' )
 					++len;
 				itr = (align_point - len) / 4 + 1;
 				if(!(temp = (char *)calloc(sizeof(char), ft_strlen(line) + itr + 3)))
-					return ;
+					return (0);
 				ft_strlcpy(temp, line, point);
 				while (itr--)
 					strcat(temp, "\t");
@@ -126,4 +135,5 @@ void	do_align(int fd, int align_point)
 		free(line);
 	}
 	close (new_fd);
+	return (1);
 }

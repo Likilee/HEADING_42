@@ -3,6 +3,9 @@
 > "Heading_42는  .c 파일들을 읽어서 함수들의 프로토타입을 파싱하여 자동으로 헤더파일을 생성해주는 프로그램 입니다."
 >
 > "Heading_42 is a program that reads .c files, parses the types of functions, and automatically creates a header file."
+>
+> `Header Made by HEADING_42`
+> ![Sample](Img/Sample.png)
 
 ## 🚀 Usage
 ### Download (다운로드)
@@ -14,7 +17,7 @@
 
 ### Setting (설정)
 >- [x] `my_config.h` 파일을 수정합니다.
->- [x] 구조체를 추가하려면  `my_strcut.h` 파일을 수정합니다.
+>- [x] 구조체를 추가하려면  `my_struct.h` 파일을 수정합니다.
 
 ### Run (실행)
 >- `bash heading42.sh`
@@ -48,5 +51,12 @@
 
 ### ✅ 업데이트
 
+2020/10/20
+> MECRO -> MACRO 오타 수정
+>
+> README.md -> my_struct.h 오타 수정
+>
+>  Makefile 오류 수정(NAME 선언시 뒤에 ; 붙였었음)
+
 2020/10/19
-프로그램 등록
+> 프로그램 등록

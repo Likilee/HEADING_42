@@ -33,7 +33,7 @@ void	put_finish(int fd);
 int		need_align(char *line);
 int		not_first_line(char *line);
 int		find_align_point(int fd);
-void	do_align(int fd, int align_point);
+int		do_align(int fd, int align_point);
 char 	*get_header_path(const char *name);
 
 #endif

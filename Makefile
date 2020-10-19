@@ -1,6 +1,5 @@
 .SUFFIXEX : .c .o
-NAME = heading_42;
-LIB = lib.a
+NAME = run_heading
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror -fsanitize=address
 AFLAGS = rc
@@ -19,6 +18,8 @@ SRCS_NAME = main.c \
 			ft_memcpy.c \
 			ft_memset.c \
 			ft_split.c \
+			ft_strchr.c \
+			ft_strndup.c \
 			ft_strlcpy.c \
 			ft_strlcat.c \
 			ft_strtrim.c \
@@ -29,21 +30,20 @@ SRCS_NAME = main.c \
 			ft_strdup.c \
 			ft_strnstr.c \
 			get_next_line.c \
-			get_next_line_utils.c
 
 SRCS = $(addprefix $(SRCS_DIR)/, $(SRCS_NAME))
 OBJECTS = $(SRCS:.c=.o)
 
-all : $(NAME) clean
+all : $(NAME)
 
 clean :
 	rm -rf $(OBJECTS)
 fclean : clean
 	rm -rf $(NAME)
 re : fclean all
-	make clean
+
 $(NAME) : $(OBJECTS)
-	 $(CC) $(CFLAGS) $(OBJECTS) -o $@ -I ./
+	$(CC) $(CFLAGS) $(OBJECTS) -o $@
 %.o : %.c
 	$(CC) $(CFLAGS) $? -c -o $@ $(INCLUDES)
-.PHONY : all clean fclean re bonus
+.PHONY : all clean fclean re

@@ -7,7 +7,7 @@ void	put_define(int fd)
 	int		i;
 	char	*ptr;
 
-	mecro = ft_split(MECRO, ',');
+	mecro = ft_split(MACRO, ',');
 	i = 0;
 	while (mecro[i])
 	{

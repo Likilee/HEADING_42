@@ -6,10 +6,11 @@
 /*   By: kilee <kilee@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/10 15:10:46 by kilee             #+#    #+#             */
-/*   Updated: 2020/10/15 10:45:41 by kilee            ###   ########.fr       */
+/*   Updated: 2020/10/20 08:49:46 by kilee            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include "get_next_line.h"
 
 void			ft_strfree(char **str)
