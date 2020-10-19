@@ -1,35 +1,36 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strlcpy.c                                       :+:      :+:    :+:   */
+/*   ft_memccpy.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: kilee <kilee@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2020/10/03 20:44:40 by kihoonlee         #+#    #+#             */
-/*   Updated: 2020/10/19 16:52:41 by kilee            ###   ########.fr       */
+/*   Created: 2020/09/28 15:41:17 by kihoonlee         #+#    #+#             */
+/*   Updated: 2020/10/19 17:31:18 by kilee            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize)
+void		*ft_memccpy(void *dst, void *src, int c, size_t n)
 {
-	size_t		i;
-	size_t		len;
+	unsigned char	*dest;
+	unsigned char	*source;
+	unsigned char	c_trans;
+	size_t			i;
 
+	if (dst == src || n == 0)
+		return (NULL);
+	c_trans = (unsigned char)c;
+	dest = (unsigned char *)dst;
+	source = (unsigned char *)src;
 	i = 0;
-	len = 0;
-	if (!src)
-		return (0);
-	while (src[len])
-		++len;
-	if (dstsize == 0 || !dst)
-		return (len);
-	while (i < dstsize - 1 && src[i])
+	while (i < n)
 	{
-		dst[i] = src[i];
+		dest[i] = source[i];
+		if (dest[i] == c_trans)
+			return (dest + i + 1);
 		++i;
 	}
-	dst[i] = '\0';
-	return (len);
+	return (NULL);
 }

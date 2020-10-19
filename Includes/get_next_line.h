@@ -6,7 +6,7 @@
 /*   By: kilee <kilee@student.42.fr>                +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/10/13 16:49:10 by kihoonlee         #+#    #+#             */
-/*   Updated: 2020/10/16 14:21:46 by kilee            ###   ########.fr       */
+/*   Updated: 2020/10/19 10:36:59 by kilee            ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,14 +21,14 @@
 ** Define BUFFER_SIZE when doesn't define during compile
 */
 # ifndef BUFFER_SIZE
-#  define BUFFER_SIZE 1
+#  define BUFFER_SIZE 100
 # endif
 
 /*
 ** Define OPEN_MAX when can't include <limits.h>
 */
 # ifndef OPEN_MAX
-#  define OPEN_MAX 12800
+#  define OPEN_MAX 20
 # endif
 
 size_t		ft_strlen(const char *s);

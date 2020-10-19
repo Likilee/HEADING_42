@@ -1,5 +1,5 @@
 .SUFFIXEX : .c .o
-NAME = my_header
+NAME = heading_42;
 LIB = lib.a
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror -fsanitize=address
@@ -7,15 +7,20 @@ AFLAGS = rc
 INCLUDES = -I ./Includes
 SRCS_DIR = ./Srcs
 SRCS_NAME = main.c \
+			put_top.c \
+			put_include.c \
+			put_define.c \
+			put_struct.c \
+			put_prototype.c \
+			put_finish.c \
+			do_align.c \
 			ft_strlen.c \
-			ft_isalnum.c \
 			ft_isalpha.c \
-			ft_isascii.c \
-			ft_isdigit.c \
-			ft_isprint.c \
 			ft_memcpy.c \
+			ft_memset.c \
 			ft_split.c \
 			ft_strlcpy.c \
+			ft_strlcat.c \
 			ft_strtrim.c \
 			ft_arr_free.c \
 			ft_strncmp.c \
@@ -25,6 +30,7 @@ SRCS_NAME = main.c \
 			ft_strnstr.c \
 			get_next_line.c \
 			get_next_line_utils.c
+
 SRCS = $(addprefix $(SRCS_DIR)/, $(SRCS_NAME))
 OBJECTS = $(SRCS:.c=.o)
 

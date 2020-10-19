@@ -1,14 +1,39 @@
-# my_header
+# HEADING_42
 
-> "이 프로젝트의 목적은 .c 파일들을 읽어서 함수들의 프로토타입을 파싱하여 자동으로 헤더파일을 생성해주는 프로그램을 만드는 것입니다."
+> "Heading_42는  .c 파일들을 읽어서 함수들의 프로토타입을 파싱하여 자동으로 헤더파일을 생성해주는 프로그램 입니다."
 >
-> "The purpose of this project is to create a program that reads .c files, parses the prototypes of functions, and automatically generates header files."
+> "Heading_42 is a program that reads .c files, parses the types of functions, and automatically creates a header file."
 
-## 🚀 Content
+## 🚀 Usage
+### Download (다운로드)
+> 작업 중인 디렉토리 안에 이 저장소를 클론 합니다.
+>
+> "Clone this repository into your working directory."
+>
+> `git clone https://github.com/Likilee/HEADING_42.git`
 
-### 🥊 Mandatory part
+### Setting (설정)
+>- [x] `my_config.h` 파일을 수정합니다.
+>- [x] 구조체를 추가하려면  `my_strcut.h` 파일을 수정합니다.
 
-| Program name     | my_header                                                |
+### Run (실행)
+>- `bash heading42.sh`
+
+----
+
+## Design
+### 🥊 헤더파일 구조
+| Top (#ifndef HEADER_NAME_H)               |
+| ---------------- |
+| Includes (#include lib)   |
+| Define (#define mecro)   |
+| Struct (Define struct)   |
+| Prototype (Get prototype from C_files) |
+| Finish (#endif) |
+
+### 🥊 기능 명세
+
+| Program name     | Heading_42                                              |
 | ---------------- | ------------------------------------------------------------ |
 | Turn in files    | *.c, */*.c, *.h, */*.h, Makefile                             |
 | Makefile         | all, clean, fclean, re, bonus                                |
@@ -20,12 +45,5 @@
 - 헤더파일은 42norminette 규칙에 맞게 생성해야한다.
 - main 함수는 제외
 
-
-| Top (#ifndef 넣기)               |
-| ---------------- |
-| Includes (#include 라이브러리)   |
-| Define (#define 부분)   |
-| Prototype (C파일에서 가져온 프로토타입) |
-| Finish (#endif) |
 
 ### ✅ Study check list
