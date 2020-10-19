@@ -57,6 +57,10 @@
 > README.md -> my_struct.h 오타 수정
 >
 >  Makefile 오류 수정(NAME 선언시 뒤에 ; 붙였었음)
+>
+> struct 에 tab이 하나도 없을 때 예외처리 추가
+>
+> gnl utils 제거 > ft_ 로 분리
 
 2020/10/19
 > 프로그램 등록
