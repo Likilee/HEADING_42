@@ -1,6 +1,6 @@
 /* .c 소스파일이 있는 경로를 "" 사이에 적어주세요
 ex) "../Srcs" */
-#define SRC_DIR "./Test"
+#define SRC_DIR "./Srcs"
 
 /* 헤더파일을 생성할 경로를 "" 사이에 적어주세요
 ex) "../Includes" */

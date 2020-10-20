@@ -1,2 +1,2 @@
 #!/bin/bash
-make && make clean && ./heading_42
+make && make clean && ./run_heading
