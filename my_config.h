@@ -12,7 +12,8 @@ ex) "../Includes" */
 ** 사용자 헤더파일을 적을 때 쌍따옴표앞에 역슬래시를 붙여주세요 ( " -> \") */
 #define LIB "<stdio.h> \"libft.h\""
 /* 사용할 매크로를 적어주세요 여러개가 있다면 ',' 로 구분해 주세요
-** ex) #define MECRO "BUFFER_SIZE 32, MAX 1024" */
+** ex) #define MECRO "BUFFER_SIZE 32, MAX 1024"
+** 쌍따옴표앞에 역슬래시를 붙여주세요 STR \"hello\" ( " -> \") */
 #define MACRO "HEADING 42"
 
 // 소스파일이 200개 이상일 경우만 수정해주세요~
