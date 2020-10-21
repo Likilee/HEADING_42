@@ -8,7 +8,7 @@
 > ![Sample](Img/Sample.png)
 
 ## 🚀 Usage
-### Download (다운로드)
+### installation (설치)
 > 작업 중인 디렉토리 안에 이 저장소를 클론 합니다.
 >
 > "Clone this repository into your working directory."
