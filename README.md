@@ -54,6 +54,7 @@
 2020/10/23
 
 > Makefile 명령줄 출력안되게 @ 붙여서 수정
+> 
 > My_config에 SRC_NAME_COMMENT 추가
 
 2020/10/20
