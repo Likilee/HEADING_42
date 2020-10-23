@@ -37,13 +37,13 @@ OBJECTS = $(SRCS:.c=.o)
 all : $(NAME)
 
 clean :
-	rm -rf $(OBJECTS)
+	@rm -rf $(OBJECTS)
 fclean : clean
-	rm -rf $(NAME)
+	@rm -rf $(NAME)
 re : fclean all
 
 $(NAME) : $(OBJECTS)
-	$(CC) $(CFLAGS) $(OBJECTS) -o $@
+	@$(CC) $(CFLAGS) $(OBJECTS) -o $@
 %.o : %.c
-	$(CC) $(CFLAGS) $? -c -o $@ $(INCLUDES)
+	@$(CC) $(CFLAGS) $? -c -o $@ $(INCLUDES)
 .PHONY : all clean fclean re
