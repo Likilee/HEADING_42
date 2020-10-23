@@ -1,5 +1,5 @@
-#include "../Includes/main.h"
-#include "../Includes/libft.h"
+#include "../include/main.h"
+#include "../include/libft.h"
 #include "../my_config.h"
 
 char 	*get_header_path(const char *name)

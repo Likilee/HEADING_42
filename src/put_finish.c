@@ -1,4 +1,4 @@
-#include "../Includes/main.h"
+#include "../include/main.h"
 
 void	put_finish(int fd)
 {

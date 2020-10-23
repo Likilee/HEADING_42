@@ -1,4 +1,4 @@
-#include "../Includes/main.h"
+#include "../include/main.h"
 
 /*
 ** 현재 읽어온 한 줄이 함수 선언부인지 여부를 확인 /

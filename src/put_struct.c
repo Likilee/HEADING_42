@@ -1,4 +1,4 @@
-#include "../Includes/main.h"
+#include "../include/main.h"
 
 /*
 ** is_struct :
@@ -9,7 +9,7 @@
 */
 int		is_struct(char *line)
 {
-	if (ft_strchr(line, '#') || ft_strchr(line, '/'))
+	if (ft_strnstr(line, "/*", 2) || ft_strnstr(line, "*/", 2) || ft_strnstr(line, "**", 2))
 			return (0);
 	while (*line)
 	{

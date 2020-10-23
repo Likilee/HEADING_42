@@ -1,4 +1,4 @@
-#include "../Includes/main.h"
+#include "../include/main.h"
 
 int		need_align(char *line)
 {

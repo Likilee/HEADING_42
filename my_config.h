@@ -1,10 +1,10 @@
 /* .c 소스파일이 있는 경로를 "" 사이에 적어주세요
 ex) "../Srcs" */
-#define SRC_DIR "./Srcs"
+#define SRC_DIR "./src"
 
 /* 헤더파일을 생성할 경로를 "" 사이에 적어주세요
 ex) "../Includes" */
-#define HEADER_PATH "./Includes"
+#define HEADER_PATH "./include"
 
 /* 생성할 헤더파일의 이름을 적어주세요. */
 #define HEADER_NAME "heading_42.h"

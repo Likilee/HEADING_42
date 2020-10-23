@@ -3,8 +3,8 @@ NAME = run_heading
 CC = gcc
 CFLAGS = -Wall -Wextra -Werror -fsanitize=address
 AFLAGS = rc
-INCLUDES = -I ./Includes
-SRCS_DIR = ./Srcs
+INCLUDES = -I ./include
+SRCS_DIR = ./src
 SRCS_NAME = main.c \
 			put_top.c \
 			put_include.c \
