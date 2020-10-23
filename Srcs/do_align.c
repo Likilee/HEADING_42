@@ -2,7 +2,7 @@
 
 int		need_align(char *line)
 {
-	if (ft_strchr(line, '#'))
+	if (ft_strchr(line, '#') || *line == '/' || *line == '*')
 		return (0);
 	while (*line)
 	{
