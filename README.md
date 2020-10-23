@@ -54,9 +54,12 @@
 2020/10/23
 
 > Makefile 명령줄 출력안되게 @ 붙여서 수정
-> 
+>
 > My_config에 SRC_NAME_COMMENT 추가
+>
 > SRC_NAME_COMMENT옵션 추가에 따라 타 소스코드 일부 변경
+>
+> 디렉토리명 변경
 
 2020/10/20
 > MECRO -> MACRO 오타 수정
@@ -70,4 +73,5 @@
 > gnl utils 제거 > ft_ 로 분리
 
 2020/10/19
+
 > 프로그램 등록
