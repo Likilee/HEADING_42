@@ -1,33 +1,34 @@
 # HEADING_42 (v1.0 / 2020.10.24)
 
-> "Heading_42는  .c 파일들을 읽어서 함수들의 프로토타입을 파싱하여 자동으로 헤더파일을 생성해주는 프로그램 입니다."
 >
 > "Heading_42 is a program that reads .c files, parses the types of functions, and automatically creates a header file."
 >
-> `Header Made by HEADING_42`
+> "Heading_42는  .c 파일들을 읽어서 함수들의 프로토타입을 파싱하여 자동으로 헤더파일을 생성해주는 프로그램 입니다."
+>
+> `Sample header made by HEADING_42`
 > ![Sample](Img/Sample.png)
 
 ## 🚀 Usage
-### installation (설치)
-> 작업 중인 디렉토리 안에 이 저장소를 클론 합니다.
+### Installation
 >
 > "Clone this repository into your working directory."
 >
-> just copy and paste `git clone https://github.com/Likilee/HEADING_42.git`
+>- Copy `git clone https://github.com/Likilee/HEADING_42.git`
 >
 
-### Setting (설정)
->- [x] `my_config.h` 파일을 수정합니다.
->- [x] 구조체를 추가하려면  `my_struct.h` 파일을 수정합니다.
+### Setting
+>- [x] Modify `my_config.h` file.
+>- [x] Edit the `my_struct.h` file to add the structure.
 
-### Run (실행)
+### Run
 >- `bash heading42.sh`
 
 ----
 
 ## Design
-### 🥊 헤더파일 구조
-> 생성되는 헤더파일은 아래의 구조로 작성된다.
+### 🥊 Header file configuration
+
+> The generated header file is written in the following structure.
 
 | Top (#ifndef HEADER_NAME_H)               |
 | ---------------- |
@@ -37,21 +38,20 @@
 | Prototype (Get prototype from C_files) |
 | Finish (#endif) |
 
-### ✅ 기능 명세
+### 🥊 Function specification
 
-| Program name     | Heading_42                                              |
-| ---------------- | ------------------------------------------------------------ |
-| Key purpose_1      | 소스파일을 읽고 헤더파일을 자동으로 생성한다.  |
-| Key purpose_2      | 42_norminette 기준에 맞게 정렬한다. |
+| Program name | Heading_42 |
+| ---------------- | -------------- |
+| Core 1 | Read the source file and automatically create the header file. |
+| Core 2 | Sort according to 42_norminette criteria. |
 
->- [x] 헤더파일에는 static을 제외한 프로토 타입만 포함되어야 한다.
->- [x] 헤더파일은 ifndef define 규칙으로 파일명을 대문자로 바꾸어 정의해야한다.
->- [x] 정해준 소스파일의 디렉토리 내의 .c 파일만 읽어야한다.
->- [x] 헤더파일은 42norminette 규칙에 맞게 생성해야한다.
->- [x] 프로토 타입을 가져올 때 main.c 파일은 제외한다.
+>- [x] Only prototypes excluding static should be included in the header file.
+>- [x] Header file must be defined by changing the file name to upper case according to the ifndef define rule.
+>- [x] Only .c files in the specified source file directory should be read.
+>- [x] Header file must be created according to 42norminette rules.
+>- [x] Exclude the main.c file when importing prototypes.
 
-### ✅ 업데이트
-
+### ✅ Update
 
 2020/10/24
 > 이슈 수정 : SRC_NAME_COMMENT 1 일 때, 개행문자 한개 추가되는 문제 FIX
