@@ -28,7 +28,7 @@
 ## Design
 ### 🥊 Header file configuration
 
-> The generated header file is written in the following structure.
+> The generated header file is written in the following order.
 
 | Top (#ifndef HEADER_NAME_H)               |
 | ---------------- |
