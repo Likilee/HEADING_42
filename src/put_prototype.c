@@ -74,10 +74,9 @@ char	**get_c_files(void)
 /*
 ** 내 헤더에 함수 프로토타입을 write 한다.
 */
-
 void	write_file_name(int fd, char *c_file)
 {
-	write (fd, "\n/*\n", 4);
+	write (fd, "/*\n", 3);
 	write (fd, "** Src is : ", 12);
 	write_on_fd(fd, c_file);
 	write (fd, "*/\n", 3);
@@ -104,7 +103,9 @@ void	put_prototype(int fd)
 	int		i;
 	char	*line;
 	int		gnl_val;
+	int		comment_start;
 
+	comment_start = 1;
 	c_files = get_c_files();
 	if (c_files[0] == NULL)
 		printf("%s\n", NO_C_FILES);
@@ -113,7 +114,12 @@ void	put_prototype(int fd)
 	while((c_fd = open(c_files[i], O_RDONLY)) > 0)
 	{
 		if (SRC_NAME_COMMENT)
+		{
+			if (comment_start == 0)
+				write(fd, "\n", 1);
 			write_file_name(fd, c_files[i]);
+		}
+		comment_start = 0;
 		while (gnl_val > 0)
 		{
 			gnl_val = get_next_line(c_fd, &line);

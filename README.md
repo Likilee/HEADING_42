@@ -13,7 +13,8 @@
 >
 > "Clone this repository into your working directory."
 >
-> `git clone https://github.com/Likilee/HEADING_42.git`
+> just copy and paste `git clone https://github.com/Likilee/HEADING_42.git`
+>
 
 ### Setting (설정)
 >- [x] `my_config.h` 파일을 수정합니다.
@@ -45,16 +46,21 @@
 
 >- [x] 헤더파일에는 static을 제외한 프로토 타입만 포함되어야 한다.
 >- [x] 헤더파일은 ifndef define 규칙으로 파일명을 대문자로 바꾸어 정의해야한다.
->- [x] 정해준 소스파일의 디렉토리
+>- [x] 정해준 소스파일의 디렉토리 내의 .c 파일만 읽어야한다.
 >- [x] 헤더파일은 42norminette 규칙에 맞게 생성해야한다.
->- [x] main 함수는 제외
+>- [x] 프로토 타입을 가져올 때 main.c 파일은 제외한다.
 
 ### ✅ 업데이트
+
+
+2020/10/24
+> 이슈 수정 : SRC_NAME_COMMENT 1 일 때, 개행문자 한개 추가되는 문제 FIX
+
 
 2020/10/23
 
 > Makefile 명령줄 출력안되게 @ 붙여서 수정
-> 
+>
 > My_config에 SRC_NAME_COMMENT 추가
 > SRC_NAME_COMMENT옵션 추가에 따라 타 소스코드 일부 변경
 

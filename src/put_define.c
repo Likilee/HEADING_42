@@ -19,9 +19,7 @@ void	put_define(int fd)
 		write(fd, mecro[i], ptr - mecro[i]);
 		write(fd, "\n#  define ", 11);
 		write(fd, mecro[i], ft_strlen(mecro[i]));
-		write(fd, "\n# endif\n", 9);
-		if (SRC_NAME_COMMENT == 0)
-			write(fd, "\n", 1);
+		write(fd, "\n# endif\n\n", 10);
 		++i;
 	}
 }
