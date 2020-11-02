@@ -1,9 +1,9 @@
 /* .c 소스파일이 있는 경로를 "" 사이에 적어주세요
-ex) "../Srcs" */
+ex) "../src" */
 #define SRC_DIR "./src"
 
 /* 헤더파일을 생성할 경로를 "" 사이에 적어주세요
-ex) "../Includes" */
+ex) "../include" */
 #define HEADER_PATH "./include"
 
 /* 생성할 헤더파일의 이름을 적어주세요. */
@@ -16,7 +16,7 @@ ex) "../Includes" */
 /* 사용할 매크로를 적어주세요 여러개가 있다면 ',' 로 구분해 주세요
 ** ex) #define MECRO "BUFFER_SIZE 32, MAX 1024"
 ** 쌍따옴표앞에 역슬래시를 붙여주세요 STR \"hello\" ( " -> \") */
-#define MACRO "HEADING 42"
+#define MACRO "WELCOME \"42_friends\""
 
 /* 함수 선언부 위에 소스파일명을 코멘트로 추가하려면 값을 1로 수정해주세요
 ** ex) IF : SRC_NAME COMMENT 1

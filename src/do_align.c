@@ -113,7 +113,7 @@ int		do_align(int fd, int align_point)
 				{
 					printf("\n%s", NO_TAB);
 					printf("Problem in this line : %s\n", line);
-					printf("Check 'not_align.h'\n");
+					printf("Check 'HEADING_42/not_align.h'\n");
 					printf("***************************************************\n\n");
 
 					return (0);
