@@ -52,6 +52,11 @@
 >- [x] Exclude the main.c file when importing prototypes.
 
 ### ✅ Update
+2020/11/01
+
+> 이슈 수정 : 스터럭처 안에 스터럭처 또는 유니온 있을 때 Tab 에러 나오는 문제 수정
+>
+> 이슈 수정 : 스트럭처 안에 }; 있을 때 개행문자 한개씩 더 나오는 문제 수정
 
 2020/10/24
 > 이슈 수정 : SRC_NAME_COMMENT 1 일 때, 개행문자 한개 추가되는 문제 FIX
