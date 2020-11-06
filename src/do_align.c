@@ -97,7 +97,7 @@ int		do_align(int fd, int align_point)
 				while (isspace(line[point]))
 				{
 					if(line[point] == '\t')
-						len += 4 - point % 4;
+						len += 4 - len % 4;
 					else
 						++len;
 					++point;
