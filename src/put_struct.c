@@ -43,7 +43,7 @@ int	put_struct(int fd)
 		{
 			write(fd, line, ft_strlen(line));
 			write(fd, "\n", 1);
-			if (ft_strchr(line, '}'))
+			if (ft_strchr(line, '}') && *(ft_strchr(line, '}') + 1) != ';')
 				write(fd, "\n", 1);
 			yes_struct = 1;
 		}

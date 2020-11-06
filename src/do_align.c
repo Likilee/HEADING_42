@@ -7,7 +7,14 @@ int		need_align(char *line)
 	while (*line)
 	{
 		if(ft_isalpha(*line))
-			return (1);
+		{
+			while (ft_isalpha(*line))
+				++line;
+			if (*line != '\0')
+				return (1);
+			else
+				return (0);
+		}
 		++line;
 	}
 	return (0);

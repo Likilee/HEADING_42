@@ -28,7 +28,7 @@
 ## Design
 ### 🥊 Header file configuration
 
-> The generated header file is written in the following structure.
+> The generated header file is written in the following order.
 
 | Top (#ifndef HEADER_NAME_H)               |
 | ---------------- |
@@ -52,6 +52,11 @@
 >- [x] Exclude the main.c file when importing prototypes.
 
 ### ✅ Update
+2020/11/01
+
+> 이슈 수정 : 스터럭처 안에 스터럭처 또는 유니온 있을 때 Tab 에러 나오는 문제 수정
+>
+> 이슈 수정 : 스트럭처 안에 }; 있을 때 개행문자 한개씩 더 나오는 문제 수정
 
 2020/11/3
 > 이슈 수정 : 구조체 안에서 정렬 밀리는 오류 수정 (do_align 에서 first_line일 때 len 체크 규칙 수정)
@@ -67,7 +72,10 @@
 > Makefile 명령줄 출력안되게 @ 붙여서 수정
 >
 > My_config에 SRC_NAME_COMMENT 추가
+>
 > SRC_NAME_COMMENT옵션 추가에 따라 타 소스코드 일부 변경
+>
+> 디렉토리명 변경
 
 2020/10/20
 > MECRO -> MACRO 오타 수정
@@ -81,4 +89,5 @@
 > gnl utils 제거 > ft_ 로 분리
 
 2020/10/19
+
 > 프로그램 등록
