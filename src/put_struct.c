@@ -22,7 +22,7 @@ int		is_struct(char *line)
 	return (0);
 }
 
-int	put_struct(int fd)
+int		put_struct(int fd)
 {
 	int		config_fd;
 	int		gnl_val;
@@ -43,7 +43,7 @@ int	put_struct(int fd)
 		{
 			write(fd, line, ft_strlen(line));
 			write(fd, "\n", 1);
-			if (ft_strchr(line, '}') && *(ft_strchr(line, '}') + 1) != ';')
+			if (*line == '}' && ft_strchr(line, ';'))
 				write(fd, "\n", 1);
 			yes_struct = 1;
 		}
